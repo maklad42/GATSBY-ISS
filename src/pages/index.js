@@ -1,5 +1,16 @@
-import React from 'react';
+import * as React from "react"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
-const IndexPage = () => <main>Index Page</main>;
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-export default IndexPage;
+const IndexPage = () => (
+  <Layout>
+    <Seo title="Home" />
+    <h1>Hi people</h1>
+    <p>Let's get looking for the ISS!</p>
+  </Layout>
+)
+
+export default IndexPage
