@@ -1,8 +1,10 @@
 import React from "react"
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
+
 import ThreeSphere from "./three-sphere"
 import ThreeGeo from "./three-geo"
+import ThreeIss from "./three-iss"
 
 const ThreeScene = () => {
   return (
@@ -21,9 +23,10 @@ const ThreeScene = () => {
         cursor: "move",
       }}
     >
-      <OrbitControls enableRotate={true} enableZone={false} enablePan={false} />
+      <OrbitControls enableRotate={true} enableZoom={false} enablePan={false} />
       <ThreeSphere />
       <ThreeGeo />
+      <ThreeIss />
     </Canvas>
   )
 }
