@@ -4,7 +4,7 @@ const ThreeSphere = () => {
   return (
     <mesh>
       <sphereGeometry args={[100, 32, 32]} />
-      <meshBasicMaterial color="#f7f7f7" transparent={true} opacity={0.6} />
+      <meshBasicMaterial color="#7f7f7f" transparent={true} opacity={0.6} />
     </mesh>
   )
 }
