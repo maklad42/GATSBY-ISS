@@ -3,7 +3,7 @@ import { GeoJsonGeometry } from "three-geojson-geometry"
 import axios from "axios"
 
 const ThreeGeo = () => {
-  const [isLoading, setIsloading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
   const [geoJson, setGeoJson] = useState(null)
 
   useEffect(() => {
@@ -12,7 +12,7 @@ const ThreeGeo = () => {
         "https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_110m_admin_0_countries.geojson"
       )
       .then(response => {
-        setIsloading(false)
+        setIsLoading(false)
         setGeoJson(response.data)
       })
       .catch(error => {

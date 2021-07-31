@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import ThreeScene from "../components/three-scene"
 
 const IndexPage = () => {
